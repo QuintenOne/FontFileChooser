@@ -38,12 +38,22 @@ Ik gebruikte wine om de applicatie te laten zien:
 wine ~/Desktop/Q/QtTimeTimer-master/release/TestCase.exe
 ```
 
-![pic1]
+
 
 ## QtCreator
 
 Ik begon aan het maken van mijn applicatie in Qt.
 Mijn applicatie kan een lettertype of de inhoud van een bestand laten zien.
 
+### Startscherm
+![main]
 
-[pic1]: pic1.png
+### Bestanden lijst
+![filelist]
+
+### Lettertype tonen
+![fontlabel]
+
+[main]: main.png
+[filelist]: filelist.png
+[fontlabel]: fontlabel.png
