@@ -13,15 +13,15 @@ MainWindow::MainWindow(QWidget *parent) :
     fontButton = new QPushButton("Select font");
     stackedWidget = new QStackedWidget();
 
-    filelist = new FontLabel();
-    fontList = new FontLabel();
+    filelist = new FileList();
+    fontLabel = new FontLabel();
 
     mainLayout->addWidget(fileButton);
     mainLayout->addWidget(fontButton);
     mainLayout->addWidget(stackedWidget);
 
     stackedWidget->addWidget(filelist);
-    stackedWidget->addWidget(fontList);
+    stackedWidget->addWidget(fontLabel);
 
     stackedWidget->setVisible(false);
 
@@ -29,13 +29,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(fontButton, SIGNAL(clicked()), SLOT(selectFont()));
 
     connect(this, SIGNAL(newFont(QFont)),
-            fontList, SLOT(newFont(QFont)));
+            fontLabel, SLOT(newFont(QFont)));
 
-    //Slots are not really there, although they are declared in the headerfile filelist.h
     connect(this, SIGNAL(addFile(QString)),
-            filelist, SLOT(addFile(QString))); // <--- HERE
+            filelist, SLOT(addFile(QString)));
     connect(this, SIGNAL(changeDirectory(QString)),
-            filelist, SLOT(changeDirectory(QString))); // <--- AND HERE
+            filelist, SLOT(changeDirectory(QString)));
 }
 
 MainWindow::~MainWindow()

@@ -28,8 +28,8 @@ private:
     QPushButton *fontButton;
     QStackedWidget *stackedWidget;
 
-    FontLabel *filelist;
-    FontLabel *fontList;
+    FileList *filelist;
+    FontLabel *fontLabel;
 
 private slots:
     void selectDirectory();
