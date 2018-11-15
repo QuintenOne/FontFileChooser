@@ -51,17 +51,14 @@ Ik begon aan het maken van mijn applicatie in Qt.
 Mijn applicatie kan een lettertype of de inhoud van een bestand laten zien.
 
 ### Startscherm
-![main_windows] ![main_linux]
+![main_linux]
 
 ### Bestanden lijst
-![filelist_windows] ![filelist_linux]
+![filelist_linux]
 
 ### Lettertype tonen
-![fontlabel_windows]  ![fontlabel_linux] 
+![fontlabel_linux] 
 
-[main_windows]: main.png
-[filelist_windows]: filelist.png
-[fontlabel_windows]: fontlabel.png
 [main_linux]: menu.PNG
 [filelist_linux]: Select_directory.PNG
 [fontlabel_linux]: Select_font.PNG
