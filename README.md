@@ -24,6 +24,11 @@ cd /home/mxe
 make qt5
 ```
 
+Zonder het toevoegen voor deze lijn aan project.pro kan ik mijn project niet compileren:
+```
+QMAKE_CXXFLAGS += -std=gnu++11
+```
+
 Ik maak een omgevingsvariabele aan en voerde qmake en make:
 
 ```
@@ -35,7 +40,7 @@ make
 Ik gebruikte wine om de applicatie te laten zien:
 
 ```
-wine ~/Desktop/Q/QtTimeTimer-master/release/TestCase.exe
+wine ~/Desktop/Q/QtTimeTimer-master/release/project.exe
 ```
 
 
