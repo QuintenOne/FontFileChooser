@@ -1,4 +1,4 @@
-# Project 1: Linux -> Windows
+# Project 1: Qt Creator
 
 ## Opstelling Cross Compiler
 ### MXE
